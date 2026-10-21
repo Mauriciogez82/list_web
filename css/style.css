@@ -1349,6 +1349,19 @@ h1 span,
     font-size: 10px;
     margin-left: 8px;
   }
+
+  .brand-logo {
+  
+    display: block;
+    width: 88px;
+     height: auto; /*38px; */
+    max-width: 100%;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+
+
 }
 
 /*fin captura real de la app*/
@@ -1365,6 +1378,7 @@ h1 span,
 .brand-logo {
   display: block;
   width: 100px;
+  height: 88px;
   /*height: 100px;*/
   object-fit: contain;
   object-position: left center;
@@ -1375,12 +1389,7 @@ h1 span,
   height: auto;
 }
 
-@media (max-width: 700px) {
-  .brand-logo {
-    width: 88px;
-    height: 38px;
-  }
-}
+
 
 /*FIN LOGO*/
 
