@@ -16,36 +16,49 @@
 <body>
   <div class="page-glow" aria-hidden="true"></div>
   
-  <header class="site-header">
-    <nav class="nav container" aria-label="Navegación principal">
-      
-    <!-- LOGO DEL PRODUCTO Para cambiarlo, reemplazá assets/logo-list.pngo modificá la ruta del atributo src.
-    -->
-      <!-- <a class="brand" href="#inicio" aria-label="List, inicio">
-        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span>list5<span class="brand-dot">.</span></span>
-      </a> -->
-      
-      <a class="brand" href="#inicio" aria-label="List, inicio">
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Navegación principal">
+
+    <!-- Logo -->
+    <a class="brand" href="#inicio" aria-label="List, inicio">
       <img
         class="brand-logo"
         src="assets/list_img_vector.svg"
         alt="List"
       >
-       <!-- FIN DEL LOGO -->
-      
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
-        <span></span><span></span>
-      </button>
-      <div class="nav-links" id="nav-links">
-        <a href="#funciones">Funciones</a>
-        <a href="#privacidad">Privacidad</a>
-        <a href="#contacto">Contacto</a>
-        
-        <a class="button button-small button-primary contact-link" href="#contacto">Consultar por List <span aria-hidden="true">↗</span></a>
-      </div>
-    </nav>
-  </header>
+    </a>
+
+    <!-- Botón del menú móvil -->
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="nav-links"
+      aria-label="Abrir menú"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navegación -->
+    <div class="nav-links" id="nav-links">
+      <a href="#funciones">Funciones</a>
+      <a href="#privacidad">Privacidad</a>
+      <a href="#contacto">Contacto</a>
+
+      <a
+        class="button button-small button-primary contact-link"
+        href="#contacto"
+      >
+        Consultar por List <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+  </nav>
+  
+</header>
+
 
   <main>
     <section class="hero container" id="inicio">
