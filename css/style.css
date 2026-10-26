@@ -55,7 +55,7 @@ button {
   width: 740px;
   height: 740px;
   top: -330px;
-  right: -160px;
+  right: 0;
   background: radial-gradient(circle, rgba(167, 243, 107, .20), transparent 67%);
   pointer-events: none;
 }
@@ -1393,3 +1393,20 @@ h1 span,
 
 /*FIN LOGO*/
 
+
+const anchoPantalla = document.documentElement.clientWidth;
+
+console.log("Ancho de pantalla:", anchoPantalla);
+console.log("Ancho del documento:", document.documentElement.scrollWidth);
+
+console.table(
+  [...document.querySelectorAll("body *")]
+    .map(el => ({
+      elemento: el.tagName.toLowerCase(),
+      clase: typeof el.className === "string" ? el.className : "",
+      izquierda: Math.round(el.getBoundingClientRect().left),
+      derecha: Math.round(el.getBoundingClientRect().right),
+      ancho: Math.round(el.getBoundingClientRect().width)
+    }))
+    .filter(el => el.derecha > anchoPantalla + 1 || el.izquierda < -1)
+);
